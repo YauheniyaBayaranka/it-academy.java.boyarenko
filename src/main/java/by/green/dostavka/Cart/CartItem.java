@@ -7,7 +7,6 @@ public class CartItem {
     public Product product;
     public double amount;
 
-
     public CartItem(Product product, double amount) {
         this.product = product;
         this.amount = amount;
@@ -16,7 +15,6 @@ public class CartItem {
     public double getAmount() {
         return amount;
     }
-
 
     @Override
     public String toString() {

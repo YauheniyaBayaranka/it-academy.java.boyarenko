@@ -27,7 +27,6 @@ public class Utils {
     private static boolean isEqual(char leftChar, char rightChar) {
         return leftChar != rightChar;
     }
-
     private static boolean isEmpty(String str) {
         return str == "";
     }

@@ -47,10 +47,30 @@ public class Product {
     public double getPrice() {
         return price;
     }
-    //public double getProduct (){
-    //  return product();
-    // }
 
+    public ProductInfo getInfo() {
+        return info;
+    }
+
+    public void setInfo(ProductInfo info) {
+        this.info = info;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
 }
 
 

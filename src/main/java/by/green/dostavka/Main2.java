@@ -6,8 +6,7 @@ import by.green.dostavka.catalog.Catalog;
 import by.green.dostavka.catalog.CatalogCategory;
 import by.green.dostavka.catalog.CatalogItem;
 import by.green.dostavka.catalog.CatalogSubcategory;
-import by.green.dostavka.product.Product;
-import by.green.dostavka.product.ProductInfo;
+import by.green.dostavka.product.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -147,5 +146,28 @@ public class Main2 {
 //15
         CatalogSubcategory catalogSubcategory = new CatalogSubcategory("SubCategory1", new CatalogItem[]{catalogItemApples, catalogItemPears, catalogItemCarrot});
         System.out.println(Catalog.getCatalogSubCategoryAsString(catalogSubcategory));
+
+        DairyProduct milk = new DairyProduct("Молоко коровье","пачка",2.50, 3);
+        DairyProduct kefir = new DairyProduct("Кефир","пачка",2.00, 1);
+        DairyProduct cheese = new DairyProduct("сыр","кг",5.60,45);
+        System.out.println(milk);
+        System.out.println(kefir);
+        System.out.println(cheese);
+
+        Egg egg = new Egg("Яйца куриные","упак",3.9,"C1");
+        Egg egg1 = new Egg("Яйца перепелиные","упак",5.9,"C0");
+        System.out.println(egg1);
+        System.out.println(egg);
+
+        IceCream iceCream = new IceCream("Мороженное пломбир ванильный","шт",1.6,50);
+        IceCream iceCream2 = new IceCream("Мороженное пломбир шоколадный","шт",2.5,75);
+        IceCream iceCream3 = new IceCream("Мороженное лед сок","шт",1.5,10);
+        System.out.println(iceCream3);
+        System.out.println(iceCream2);
+        System.out.println(iceCream);
+
+
+
+
     }
 }
