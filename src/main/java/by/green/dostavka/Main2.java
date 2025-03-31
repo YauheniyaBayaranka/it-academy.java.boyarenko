@@ -10,6 +10,7 @@ import by.green.dostavka.product.Product;
 import by.green.dostavka.product.ProductInfo;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main2 {
     public static void main(String[] args) {
@@ -139,5 +140,10 @@ public class Main2 {
 //19
         String result = cart.getCartCheckAsString();
         System.out.println(result);
+
+        List<CatalogItem> itemsList = List.of(catalogItemApples, catalogItemPears, catalogItemCarrot);
+        String string = Catalog.getCatalogItemsAsString(itemsList);
+        System.out.println(string);
+
     }
 }

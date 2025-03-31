@@ -14,7 +14,7 @@ public class Cart {
         this.items = new CartItem[cartItems.size()];
 
         for (int i = 0; i < cartItems.size(); i++) {
-            items[i] = cartItems.get(i);
+            this.items[i] = cartItems.get(i);
         }
     }
 

@@ -3,6 +3,7 @@ package by.green.dostavka.catalog;
 import by.green.dostavka.product.Product;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Catalog {
@@ -26,14 +27,14 @@ public class Catalog {
         return productListToString(List.of(catalogItem.getProducts()), result).toString();
     }
 
-    /*public static String getCatalogItemsAsString(ArrayList<CatalogItem> catalogItems) {
+    public static String getCatalogItemsAsString(List<CatalogItem> catalogItems) {
         StringBuilder result = new StringBuilder();
         for (CatalogItem item : catalogItems) {
-            result.append(productListToString(catalogItems));
+            result.append("НАЗВАНИЕ:").append(item.getName()).append("\n");
+            productListToString(Arrays.asList(item.getProducts()), result);
         }
-        return productListToString(catalogItems,result).toString;
-    }*/
-
+        return result.toString();
+    }
 
     private static StringBuilder productListToString(List<Product> products, StringBuilder result) {
         for (Product product : products) {
