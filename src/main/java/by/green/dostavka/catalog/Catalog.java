@@ -16,8 +16,6 @@ public class Catalog {
         return productListToString(products, result).toString();
     }
 
-    ;
-
     public static String getCatalogItemAsString(CatalogItem catalogItem) {
         StringBuilder result = new StringBuilder("НАЗВАНИЕ:" + catalogItem.getName() + "\n");
 //        for (Product product : catalogItem.getProducts()) {
@@ -30,6 +28,15 @@ public class Catalog {
     public static String getCatalogItemsAsString(List<CatalogItem> catalogItems) {
         StringBuilder result = new StringBuilder();
         for (CatalogItem item : catalogItems) {
+            result.append("НАЗВАНИЕ:").append(item.getName()).append("\n");
+            productListToString(Arrays.asList(item.getProducts()), result);
+        }
+        return result.toString();
+    }
+
+    public static String getCatalogSubCategoryAsString(CatalogSubcategory catalogSubCategory) {
+        StringBuilder result = new StringBuilder("НАЗВАНИЕ:" + catalogSubCategory.getName() + "\n");
+        for (CatalogItem item : catalogSubCategory.getCatalogItem()) {
             result.append("НАЗВАНИЕ:").append(item.getName()).append("\n");
             productListToString(Arrays.asList(item.getProducts()), result);
         }

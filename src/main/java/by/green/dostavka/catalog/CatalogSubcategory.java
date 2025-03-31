@@ -12,6 +12,14 @@ public class CatalogSubcategory {
         this.items = items;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public CatalogItem[] getCatalogItem () {
+        return items;
+    }
+
     @Override
     public String toString() {
         return "CatalogSubcategory{" +

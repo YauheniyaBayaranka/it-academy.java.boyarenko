@@ -128,7 +128,7 @@ public class Main2 {
         CartItem potatoessCartItem = new CartItem(potatoesProd, 0.5);
         CartItem applesCartItem = new CartItem(applesProd, 3.5);
         CartItem pearsCartItem = new CartItem(pearsProd, 7.5);
-        //17
+//17
         ArrayList<CartItem> cartItems = new ArrayList<>();
         cartItems.add(carrotsCartItem);
         cartItems.add(potatoessCartItem);
@@ -140,10 +140,12 @@ public class Main2 {
 //19
         String result = cart.getCartCheckAsString();
         System.out.println(result);
-
+//14
         List<CatalogItem> itemsList = List.of(catalogItemApples, catalogItemPears, catalogItemCarrot);
         String string = Catalog.getCatalogItemsAsString(itemsList);
         System.out.println(string);
-
+//15
+        CatalogSubcategory catalogSubcategory = new CatalogSubcategory("SubCategory1", new CatalogItem[]{catalogItemApples, catalogItemPears, catalogItemCarrot});
+        System.out.println(Catalog.getCatalogSubCategoryAsString(catalogSubcategory));
     }
 }
