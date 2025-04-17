@@ -7,7 +7,7 @@ public class MaxValueReplacer {
 
         replaceNegativeWithMax(array, maxValue);
 
-        System.out.print("Измененный массив: ");
+        System.out.print("Измененный массив с отрицательного на максимально положительный: ");
         for (int num : array) {
             System.out.print(num + " ");
         }
