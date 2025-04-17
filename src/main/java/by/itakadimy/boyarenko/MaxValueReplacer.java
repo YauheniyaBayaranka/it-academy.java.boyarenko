@@ -2,7 +2,7 @@ package by.itakadimy.boyarenko;
 
 public class MaxValueReplacer {
     public static void main(String[] args) {
-        int[] array = {3, -1, 7, -5, 2, -8, 10, -3};
+        int[] array = {23, -1, 7, -5, 2,13, -8, 10, -3};
         int maxValue = findMaxValue(array);
 
         replaceNegativeWithMax(array, maxValue);
