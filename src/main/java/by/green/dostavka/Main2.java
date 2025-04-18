@@ -2,6 +2,7 @@ package by.green.dostavka;
 
 import by.green.dostavka.Cart.Cart;
 import by.green.dostavka.Cart.CartItem;
+import by.green.dostavka.card.Card;
 import by.green.dostavka.catalog.Catalog;
 import by.green.dostavka.catalog.CatalogCategory;
 import by.green.dostavka.catalog.CatalogItem;
@@ -166,8 +167,10 @@ public class Main2 {
         System.out.println(iceCream2);
         System.out.println(iceCream);
 
-
-
+        Card card1 = new Card("Петров",800);
+        Card card2 = new Card("Иванов",12000);
+        System.out.println(card1);
+        System.out.println(card2);
 
     }
 }
