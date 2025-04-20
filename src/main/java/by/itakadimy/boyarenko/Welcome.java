@@ -8,5 +8,6 @@ public class Welcome {
     public static void main(String[] args) {
         String str = getWelcome();
         System.out.println(str);
+        System.out.println(getWelcome());
     }
 }
