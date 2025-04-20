@@ -2,10 +2,10 @@ package by.itakadimy.boyarenko;
 
 public class MainVarArg {
     public static void main(String[] arg) {
-        VarArg tstvarg = new VarArg();
-        System.out.println(tstvarg.calcSum());
-        System.out.println(tstvarg.calcSum(3));
-        System.out.println(tstvarg.calcSum(55, 66));
-        System.out.println(tstvarg.calcSum(77, 55, 33, 11, 99));
+        VarArg testvarg = new VarArg();
+        System.out.println(testvarg.calcSum());
+        System.out.println(testvarg.calcSum(5));
+        System.out.println(testvarg.calcSum(355, 666));
+        System.out.println(testvarg.calcSum(777, 555, 333, 101, 909));
     }
 }
