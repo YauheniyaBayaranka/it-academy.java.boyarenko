@@ -1,9 +1,11 @@
 package by.green.dostavka.card;
 
-public class Card {
+import by.green.dostavka.CardBalance;
 
-    String cardholder;
-    double  sum;
+public class Card implements CardBalance {
+
+    private String cardholder;
+    private double sum;
 
     public Card(String cardholder, double sum) {
         this.cardholder = cardholder;
@@ -24,5 +26,18 @@ public class Card {
 
     public void setSum(double sum) {
         this.sum = sum;
+    }
+
+    @Override
+    public int getBalance() {
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Card{" +
+                "cardholder='" + cardholder + '\'' +
+                ", sum=" + sum +
+                '}';
     }
 }

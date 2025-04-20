@@ -2,10 +2,10 @@ package by.itakadimy.boyarenko;
 
 public class VarArg {
     public int calcSum(int... values) {
-        int res = 0;
-        for (int x : values) {
-            res += x;
+        int rs = 0;
+        for (int i : values) {
+            rs += i;
         }
-        return res;
+        return rs;
     }
 }
